@@ -99,7 +99,7 @@ https://www.bilibili.com/video/BV1sT4y1S7AF/
 
 ### 2.文档资料：
 
- * Annaconda配置Caffe 链接：
+ * Anaconda配置Caffe 链接：
 
  ```tcl
   链接： https://pan.baidu.com/s/1jQO90zYy3LeicOedLMPg4Q?pwd=8f5d 
@@ -171,9 +171,14 @@ https://www.bilibili.com/video/BV1sT4y1S7AF/
 
 <div align="center">
     <a href="">
-        <img src="./.github/media/yolo_v3_struct.png" width=800 height=400>  
+        <img src="./.github/media/yolo_v3_struct.png" width=600 height=300>  
     </a>
 </div>
+
+
+
+
+
 
 
 
