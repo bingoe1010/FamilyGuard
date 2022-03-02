@@ -64,6 +64,75 @@
     <br>
     <sup>Tesing Mixpose Singal-person <a href="http://www.xidianfamilyguard.com" target="_blank">Author:bingxie</a></sup>
 </p>
+## 相关视频和文档链接
+
+
+
+### 1.视频分享
+
+作品功能演示：[【竞赛作品分享】第四届嵌入式竞赛作品FamilyGuard](https://www.bilibili.com/video/BV1Vr4y1v76q/)
+
+```tcl
+https://www.bilibili.com/video/BV1Vr4y1v76q/
+
+```
+
+开发经验交流：[【开发经验交流】第四届嵌入式竞赛作品FamilyGuard](https://www.bilibili.com/video/BV1ZL411P7RD/)
+
+```tcl
+https://www.bilibili.com/video/BV1ZL411P7RD/
+
+```
+
+作品经验分享：[【作品技术分享】第四届嵌入式竞赛作品FamilyGuard](https://www.bilibili.com/video/BV1sT4y1S7AF/)
+
+```tcl
+https://www.bilibili.com/video/BV1sT4y1S7AF/
+
+```
+
+ **PS.如果觉得视频还不错的话，记得投两颗硬币**
+
+
+
+
+
+### 2.文档资料：
+
+ * Annaconda配置Caffe 链接：
+
+ ```tcl
+  链接： https://pan.baidu.com/s/1jQO90zYy3LeicOedLMPg4Q?pwd=8f5d 
+  提取码：8f5d 
+ ```
+
+* Caffe学习参考资料：
+
+```tcl
+链接：https://pan.baidu.com/s/1oVog_gBzbeCwOs89DbJmLw?pwd=v0qk 
+提取码：v0qk 
+```
+
+
+
+* 开发经验交流PPT分享：
+
+```tcl
+链接：https://pan.baidu.com/s/130ILd-jAQjgP2DL1Rzm6wQ?pwd=8n9n 
+提取码：8n9n 
+```
+
+* 技术报告下载：
+
+```tcl
+链接：https://pan.baidu.com/s/1qbGjHlbazWBMmorXJb1gig?pwd=hbcr 
+提取码：hbcr 
+```
+
+
+
+
+
 
 
 
@@ -102,9 +171,10 @@
 
 <div align="center">
     <a href="">
-        <img src="./.github/media/yolo_v3_arch.png" width=600 height=300>  
+        <img src="./.github/media/yolo_v3_struct.png" width=800 height=400>  
     </a>
 </div>
+
 
 
 <div align="center">
@@ -114,14 +184,14 @@
 </div>
 
 
-
+此部分的详细使用流程后续会补充（ps.最近有点忙）
 
 
 
 
 ## 问题反馈
 
-* 邮箱：binxe@stu.xidian.edu.cn
+* 邮箱：binxie@stu.xidian.edu.cn
 
 
 
@@ -135,4 +205,5 @@
 
 ## 更新说明
 
-* 2022-3-1 ：由于租用的服务器到期了，很多图像存储资源无法显示，此次对文档当中的插图进行更新
+* 2022-3-1 ：由于租用的服务器到期了，很多图像存储资源无法显示，此次对文档当中的插图进行更新；
+* 2022-3-3 ：更新了文件夹下的README说明文档，补全了缺失的文件， 增加了PPT和技术文档下载，开发经验分享视频；

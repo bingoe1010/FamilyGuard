@@ -49,9 +49,10 @@ cd darknet
 
 <div align="center">
     <a href="">
-        <img src="../.github/media/yolo_v3_arch.png" width=600 height=300>  
+        <img src="../.github/media/yolo_v3_struct.png" width=800 height=400>  
     </a>
 </div>
+
 
 
 
