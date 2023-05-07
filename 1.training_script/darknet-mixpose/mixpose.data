@@ -1,7 +1,0 @@
-classes = 8
-train = /home/bing/work/mixpose/training_dts/list/mixpose_train.txt
-valid = /home/bing/work/mixpose/validation_dts/list/mixpose_validation.txt
-names = /home/bing/work/darknet-mixpose/mixpose.names
-backup = /home/bing/work/darknet-mixpose/backup/
-
-

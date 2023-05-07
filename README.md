@@ -1,25 +1,20 @@
-# Family Guard
+# FamilyGuard & OpenHarmony
+
+
 
 <div align="center">
-    <img src=".github/media/fg_logo.png" width="300">
+    <img src=".github/media/fg_oh1_logo.png" width="">
 </div>
 
 
 
-|  **Build Type**  | `Linux` | `MacOS` | `Windows` |
-| :--------------: | :-----: | :-----: | :-------: |
-| **Build Status** | passed  | unknown |  passed   |
-
-​	[**FamilyGuard**](http:www.xidianfamilyguard.com)是一个部署在嵌入式平台的智能家庭系统，可以帮助我们快速的了解家庭状况，并针对一些异常行为做出及时的应对，避免一些意外事件的发生。所有模型均在边缘设备进行本地推理，因此在数据隐私安全上面可以起到很好的保护。
-
-​	该产品的核心功能是[检测人群行为](#结果测试)，所以不仅可应用于监测家庭，还可以用 在其他需要对人群行为进行检测的地方。比如统计教室里学生的专注力，监测社 区街道和养老院房间走廊等地方的异常行为。
+# 0. 更新说明
 
 
-<p align="center">
-    <img src=".github/media/kun_gif.gif" width=500 height=300>
-    <br>
-    <sup>Tesing Mixpose <a href="http://www.xidianfamilyguard.com" target="_blank">Author:bingxie</a></sup>
-</p>
+
+由于有部分开发用户反馈代码部署开发有一定难度，以及部分文件失效。所以此次更新一个分支，本仓库内容为最新适配鸿蒙开发环境代码，鸿蒙开发环境版本为`xxxxxx`。除此之外，本文还将提供详细的部署流程和操作视频，旨在快速开发AI智能应用在端侧平台，助力对**HI3516DV300**芯片智能开发。同时为了帮助用户理解海思芯片智能应用的开发流程，本仓库将部署的流程分为几部分基础知识进行讲解，先进行必要知识的讲解和实践，最后才是本项目的部署流程。如果用户对这类部署不是很熟悉，请务必按照本人推荐的步骤进行学习。因为作者本身并不是专业嵌入式相关开发人员，所以可能某些方面的经验会对你的开发起到一定的帮助，如果你觉得本仓库有用，记得\star一下，这样会对我有一定的鼓励，如果有任何疑问，也随时欢迎call我（不过不一定能够及时回复你，望见谅！）
+
+
 
 
 
@@ -42,9 +37,101 @@
    
 
 
-## 结果测试
 
-### Human Rec & Head—2D
+# 1. 相关部署流程说明
+
+
+
+本小节将以YOLO v3模型的推理、量化、部署步骤为例进行说明，同时本仓库还同时提供YOLO v4、YOLO v5、YOLO v7的相关推理驱动，用户可自行查看相关目录进行部署推理。
+
+
+
+## 1. 边缘AI推理流程
+
+
+
+
+
+## 2. AI模型训练步骤
+
+
+
+
+
+## 3. AI模型量化步骤
+
+
+
+
+
+## 4. AI模型推理驱动
+
+
+
+
+
+## 5. AI模型板端推理
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2. FamilyGuard项目复现
+
+
+
+
+
+
+|  **Build Type**  | `Linux` | `MacOS` | `Windows` |
+| :--------------: | :-----: | :-----: | :-------: |
+| **Build Status** | passed  | unknown |  passed   |
+
+
+
+## 2.1 项目简介
+
+本项目为2020年`全国大学生嵌入式`竞赛全国一等奖&最佳创意奖获得者，主要是利用海思边缘智能推理设备进行的开发，项目内容具体如下：
+
+​	[**FamilyGuard**](http:www.xidianfamilyguard.com)是一个部署在嵌入式平台的智能家庭系统，可以帮助我们快速的了解家庭状况，并针对一些异常行为做出及时的应对，避免一些意外事件的发生。所有模型均在边缘设备进行本地推理，因此在数据隐私安全上面可以起到很好的保护。该产品的核心功能是[检测人群行为](#结果测试)，所以不仅可应用于监测家庭，还可以用 在其他需要对人群行为进行检测的地方。比如统计教室里学生的专注力，监测社 区街道和养老院房间走廊等地方的异常行为。
+
+
+
+
+
+
+
+## 2.2 算法流程
+
+
+
+
+
+
+
+
+
+
+
+## 2.3 模型测试
+
+### 2.3.1 人体和头部检测识别
 
 <p align="center">
     <img src="./.github/media/two_person_short_gif.gif" width=250 height=200>
@@ -57,16 +144,61 @@
 
 
 
-### Mixpose Short —2D
+### 2.3.2 人体关键点识别
 
 <p align="center">
-    <img src="./.github/media/singal_person_short_gif.gif" width=600 height=350>
+    <img src=".github/media/kun_gif.gif" width=550 height=300>
+    <img src="./.github/media/singal_person_short_gif.gif" width=550 height=300>
     <br>
     <sup>Tesing Mixpose Singal-person <a href="http://www.xidianfamilyguard.com" target="_blank">Author:bingxie</a></sup>
 </p>
-## 相关视频和文档链接
 
 
+## 2.4 模型部署
+
+
+
+
+
+
+
+
+
+## 2.5 小程序开发
+
+本小节所提供的小程序包含两个版本：`云服务器端`和`本地蓝牙连接`，用户可自行选择进行使用。由于小程序开发类似美工制作＋事件绑定，所以此处以一个IOT端的设备上下互联为例进行说明，同时也会将本人项目当中所开发的小程序进行开源处理，用户可根据提供的教程和自身需求进行相关更改。
+
+
+
+### 2.5.1 腾讯云开发版本
+
+
+
+
+
+### 2.5.2 蓝牙开发版本
+
+
+
+
+
+
+
+
+
+## 2.6 网页开发
+
+网页端程序逻辑与小程序端逻辑大致相同，采用html+js+php进行开发，因此此处不过多进行讲解。直接给出源码进行学习。
+
+
+
+
+
+
+
+
+
+## 2.7 相关资料
 
 ### 1.视频分享
 
@@ -137,78 +269,7 @@ https://www.bilibili.com/video/BV1sT4y1S7AF/
 
 
 
-
-## 文件说明
-
-| **文件名称**          |                    `文件描述`                    |   `其它说明`   |
-| :-------------------- | :----------------------------------------------: | :------------: |
-| **.github**           |    媒体插图文件夹，主要保存README文件中的插图    |      .png      |
-| **0.dts**             |  模型训练数据集，主要为模型训练数据集的制作脚本  |       /        |
-| **1.traing_script**   |  模型训练脚本文件，包含多个模型所采用的训练框架  |       .c       |
-| **2.model_file**      |  板端部署的模型文件，主要为插件和网络的量化文件  |   .wk .plugs   |
-| **3.algorithm_sim**   | 相关的算法仿真文件,包括c语言的驱动、Simulink仿真 |   .c .m .slx   |
-| **4.soft_bus**        |    软总线相关协议的说明，API接口以及代码示例     |     .c .m      |
-| **5.post_processing** |  后处理算法的实现，即软件算法在Pegasus端的部署   |       .c       |
-| **6.hci_if**          |   人机交互程序，此部分为微信小程序和网页客服端   | .wxml... .html |
-
-
-## 特性说明
-
-* 采用分层级多段式神经网络进行姿态估计，可以保证帧率和准确性；
-* 后处理算法为软件实现，部署于Pegasus端，可实现对NNIE的硬件输出结果进行处理；
-* 采用Simulink对后处理算法模型进行建模仿真。
-
-<p align="center">
-    <img src="./.github/media/simulink_post_processing.png" width=800 height=500>
-    <br>
-    <sup>Simulink Post processing <a href="http://www.xidianfamilyguard.com" target="_blank">Author:bingxie</a></sup>
-</p>
-
-
-
-
-## 部署流程
-
-<div align="center">
-    <a href="">
-        <img src="./.github/media/yolo_v3_struct.png" width=600 height=300>  
-    </a>
-</div>
-
-
-
-
-
-
-
-
-<div align="center">
-    <a href="">
-        <img src="./.github/media/runscript.gif" width=600 height=300>
-    </a>
-</div>
-
-
-此部分的详细使用流程后续会补充（ps.最近有点忙）
-
-
-
-
-## 问题反馈
+# 3. 问题反馈
 
 * 邮箱：binxie@stu.xidian.edu.cn
 
-
-
-
-
-## 隐私权限
-
-* 此次模型的训练数据集为同学和自己的照片组成，为了保证隐私，暂不进行公开，仅提供数据集的制作教程，数据核验和转换的脚本；
-* 此次工程仅供个人学习所用。
-
-
-## 更新说明
-
-* 2022-3-1 ：由于租用的服务器到期了，很多图像存储资源无法显示，此次对文档当中的插图进行更新；
-* 2022-3-3 ：更新了文件夹下的README说明文档，补全了缺失的文件， 增加了PPT和技术文档下载，开发经验分享视频；
